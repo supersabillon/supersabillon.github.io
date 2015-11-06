@@ -1,0 +1,23 @@
+---
+layout: post
+title: 'box-sizing: border-box'
+comments : true
+tags:
+- webdev
+- webdevelopment
+- frontend
+- frontenddevelopment
+- css
+- ui
+- web
+- tech
+---
+<p>Really sucks to go into someone else&#8217;s css to add some stuff and halfway there realizing they are not using border-box. <br/><br/>Go ahead and make your life easier by slapping this code at the top of your stylesheet:</p>
+<div class="code">
+<div>
+<pre>/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }</pre>
+</div>
+</div>
+<p><a href="http://paulirish.com/2012/box-sizing-border-box-ftw/">Read this</a> from Paul Irish. </p>
+<p>/js</p>

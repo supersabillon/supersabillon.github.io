@@ -1,0 +1,49 @@
+.blog-post {
+	margin-bottom: 65px;
+
+	.blog-post__title {
+	}
+
+	.blog-post__date {
+		color: $secondary-color;
+		margin: 0 0 30px;
+		font-size: 85%;
+	}
+
+	p {
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+		height: auto;
+		margin: 15px auto 0;
+	}
+
+	a {
+		color: $accent-color;
+		border-bottom: 1px solid $accent-color;
+
+		&:hover {
+			color: rgba($accent-color, 0.7);
+		}
+	}
+
+	.videoContainer {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		margin-bottom: 2.5em;
+
+		iframe, object, embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+}

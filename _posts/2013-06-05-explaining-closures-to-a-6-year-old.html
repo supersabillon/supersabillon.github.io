@@ -1,0 +1,53 @@
+---
+layout: post
+title: Explaining closures to a 6 year old
+comments : true
+tags:
+- closures
+- javascript
+- webdev
+- webdevelopment
+- front-end
+- programming
+---
+<p>I was browsing closures in the interwebs and found this <a href="http://stackoverflow.com/questions/111102/how-do-javascript-closures-work/6472397#6472397" target="_blank">gem</a> at stackoverflow.</p>
+<blockquote>
+<p><strong>Once upon a time:</strong></p>
+<p>There was a princess&#8230;</p>
+<div class="code">
+<pre class="default prettyprint prettyprinted"><code><span class="kwd">function</span><span class="pln"> princess</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></pre>
+</div>
+<p>She lived in a wonderful world full of adventures. She met her Prince Charming, rode around her world on a unicorn, battled dragons, encountered talking animals, and many other fantastical things.</p>
+<div class="code">
+<pre class="default prettyprint prettyprinted"><code><span class="pln">    </span><span class="kwd">var</span><span class="pln"> adventures </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[];</span><span class="pln">
+
+    </span><span class="kwd">function</span><span class="pln"> princeCharming</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">/* ... */</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">var</span><span class="pln"> unicorn </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">/* ... */</span><span class="pln"> </span><span class="pun">},</span><span class="pln">
+        dragons </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="pln"> </span><span class="com">/* ... */</span><span class="pln"> </span><span class="pun">],</span><span class="pln">
+        squirrel </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Hello!"</span><span class="pun">;</span></code></pre>
+</div>
+<p>But she would always have to return back to her dull world of chores and grown-ups.</p>
+<div class="code">
+<pre class="default prettyprint prettyprinted"><code><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">{</span></code></pre>
+</div>
+<p>And she would often tell them of her latest amazing adventure as a princess.</p>
+<div class="code">
+<pre class="default prettyprint prettyprinted"><code><span class="pln">        story</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">return</span><span class="pln"> adventures</span><span class="pun">[</span><span class="pln">adventures</span><span class="pun">.</span><span class="pln">length </span><span class="pun">-</span><span class="pln"> </span><span class="lit">1</span><span class="pun">];</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">};</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+</div>
+<p>But all they would see is a little girl&#8230;</p>
+<div class="code">
+<pre class="default prettyprint prettyprinted"><code><span class="kwd">var</span><span class="pln"> littleGirl </span><span class="pun">=</span><span class="pln"> princess</span><span class="pun">();</span></code></pre>
+</div>
+<p>&#8230;telling stories about magic and fantasy.</p>
+<div class="code">
+<pre class="default prettyprint prettyprinted"><code><span class="pln">littleGirl</span><span class="pun">.</span><span class="pln">story</span><span class="pun">();</span></code></pre>
+</div>
+<p>And even though the grown-ups knew of real princesses, they would never believe in the unicorns or dragons because they could never see them. The grown-ups said that they only existed inside the little girl&#8217;s imagination.</p>
+<p>But we know the real truth; that the little girl with the princess inside&#8230;</p>
+<p>&#8230;is really a princess with a little girl inside.</p>
+</blockquote>

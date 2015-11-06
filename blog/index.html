@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<article class="archive">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-2">
+        <h1>archive</h1>
+        {% include pagination.html %}
+      </div>
+    </div>
+
+      {% for post in paginator.posts %}
+        <section class="post">
+            <a href="{{ post.url }}">
+              <div class="row">
+                <div class="post__title col-sm-6 col-sm-offset-2">
+                  {{ post.title }} 
+                </div>
+                <div class="post__date col-sm-2">
+                  {{ post.date | date: "%B %-d %Y" }} 
+                </div>
+              </div>
+            </a>
+        </section><!-- .post -->
+      {% endfor %}
+      
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-2">
+        {% include pagination.html %}
+      </div>
+    </div>
+  </div> <!-- end container-fuid -->
+</article>
+

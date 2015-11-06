@@ -1,0 +1,30 @@
+// homepage
+.post {
+	margin-bottom: 30px;
+	padding: 5px 0 5px 5px;
+	transition: background-color 0.5s ease;
+
+	@include respond-to($mediumScreen) {
+		padding-left: 0;
+	}
+
+	.post__title {
+		//color: $primary-color;
+		font-weight: 600;
+	}
+
+	.post__date {
+		text-transform: uppercase;
+		font-size: 80%;
+		color: $secondary-color;
+
+		@include respond-to($mediumScreen) {
+			text-align: right;
+		}
+	}
+
+	&:hover {
+		background-color: $light-color;
+	}
+
+}

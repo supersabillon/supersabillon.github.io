@@ -1,0 +1,5 @@
+// Media queries
+@mixin respond-to($screenWidth: 400px) {
+	// output the mixin content inside of a media query
+	@media screen and (min-width: $screenWidth) { @content; }
+}

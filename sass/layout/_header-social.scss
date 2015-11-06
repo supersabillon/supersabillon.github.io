@@ -1,0 +1,16 @@
+.header-social {
+	text-align: center;
+	padding-left: 0;
+	li {
+		display: inline-block;
+		margin-right: 10px;
+
+		a {
+			color: $primary-color;
+
+			&:hover {
+				color: $accent-color;
+			}
+		}
+	}
+}

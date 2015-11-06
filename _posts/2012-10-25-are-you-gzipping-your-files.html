@@ -1,0 +1,74 @@
+---
+layout: post
+title: Are you gzipping your files?
+comments : true
+tags:
+- webdevelopment
+- webdev
+- frontend
+- frontenddevelopment
+- performance
+- htaccess
+- ui
+- web
+- tech
+---
+<p>One quick way to make your website faster is turning on HTTP Compression, also known as gzipping or mod_deflate. </p>
+<p>This is something that will just take a few minutes of your time but will improve your website&#8217;s performance dramatically. </p>
+<h2>WHAT IS HTTP COMPRESSION?</h2>
+<p>From <a href="http://en.wikipedia.org/wiki/HTTP_compression">Wikipedia</a>: HTTP compression is a capability that can be built into web servers and web clients to make better use of available bandwidth, and provide faster transmission speeds between both.</p>
+<p>Each time a user visits your site, there&#8217;s communication happening from their browser to your website&#8217;s server. If you are not using HTTP Compression or Gzipping, the files travel the Internet from the server to the browser without any changes. The same way they left, same way they arrive. </p>
+<p>Now when you gzip, the files get zipped (compressed to smaller files) before they leave the server. The server then sends the compressed files across the Internet and get decompressed by the browser before using them. </p>
+<p>Some hosts already gzip automatically your files. But not all of them.</p>
+<h2>HOW TO CHECK IF YOU&#8217;RE GZIPPING OR NOT?</h2>
+<p>Use <a href="http://gzipwtf.com/">gzipWTF.com</a> a handy tool that will show you which resources are not being gzipped by the server, which resources are slow and which are causing 404s.</p>
+<h2>HOW TO SET UP GZIP COMPRESSION?</h2>
+<p>For Apache servers here is one way to do it: go to the root directory of your server and open the .htaccess file. Then paste this code:</p>
+<div class="code">
+<div>
+<pre># ----------------------------------------------------------------------
+# Gzip compression
+# ----------------------------------------------------------------------
+
+&lt;IfModule mod_deflate.c&gt;
+
+  # Force deflate for mangled headers developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
+  &lt;IfModule mod_setenvif.c&gt;
+    &lt;IfModule mod_headers.c&gt;
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    &lt;/IfModule&gt;
+  &lt;/IfModule&gt;
+
+  # Compress all output labeled with one of the following MIME-types
+  &lt;IfModule mod_filter.c&gt;
+    AddOutputFilterByType DEFLATE application/atom+xml \
+                                  application/javascript \
+                                  application/json \
+                                  application/rss+xml \
+                                  application/vnd.ms-fontobject \
+                                  application/x-font-ttf \
+                                  application/xhtml+xml \
+                                  application/xml \
+                                  font/opentype \
+                                  image/svg+xml \
+                                  image/x-icon \
+                                  text/css \
+                                  text/html \
+                                  text/plain \
+                                  text/x-component \
+                                  text/xml
+  &lt;/IfModule&gt;
+
+&lt;/IfModule&gt;
+</pre>
+</div>
+</div>
+<p><a href="http://html5boilerplate.com/">Source.</a></p>
+<p>In case you don&#8217;t have an .htaccess file you can create one by opening a text editor like Notepad, name the file .htaccess and upload it to your root directory.</p>
+<p>If you&#8217;re not running on Apache servers then my recommendation is to contact your Web host customer support and request for HTTP compression.</p>
+<h2>RESULTS</h2>
+<p>The following images show the timeline of a website I work with. The first image shows the amount of time it took to load and how much it was transferred while NOT using HTTP Compression. In the second image I&#8217;m using HTTP Compression and you can see the difference.</p>
+<p><img height="355" src="http://i.imgur.com/RH16b.png" width="1147"/></p>
+<p><img height="354" src="http://i.imgur.com/wQ6gS.png" width="1144"/></p>
+<p>Every second counts when it comes to website performance.</p>

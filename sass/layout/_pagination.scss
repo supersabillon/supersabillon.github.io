@@ -1,0 +1,19 @@
+.pagination {
+	ul {
+		margin: 0;
+		padding: 0;
+
+		text-align: center;
+		li {
+			display: inline-block;
+		}
+	}
+
+	.disabled {
+		color: $secondary-color;
+	}
+
+	.active {
+		border-bottom: 1px solid $primary-color;
+	}
+}

@@ -1,0 +1,12 @@
+
+{% include header.html %}
+<section class="container-fluid blog-post animated fadeInUp">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h1 class="blog-post__title">{{ page.title }}</h1>
+			<h4 class="blog-post__date">{{ page.date | date: "%B %-d, %Y" }}</h4>
+			{{ content }}
+		</div>
+	</div>
+</section>
+{% include blog-footer.html %}
