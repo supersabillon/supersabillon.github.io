@@ -17,7 +17,7 @@ The Good
 --------
 + In Google Play You can upload your own songs. Basically they offer a cloud storage for your music. You can play them in any device without having to download them locally. The limit is 20,000 songs which equals around 40gb, enough for me. Hopefully they add more space later.
 
-+ Can't find a song in Google Play? You can buy it directly from Google, or as stated above, buy it somewhere else and upload to Google. In Spotify if you can't find a song your screwed. 
++ Can't find a song in Google Play? You can buy it directly from Google, or as stated above, buy it somewhere else and upload to Google. In Spotify if you can't find a song you're screwed.
 
 + The "I'm Feeling Lucky" station. Google Play has this 'radio station' that plays music from your listening history, your library and songs that it thinks you might like. It's awesome for those times you have no idea what to listen to.
 
@@ -29,7 +29,7 @@ The Good
 
 The Bad
 -------
-+ Since it's a web app not a desktop app the control buttons in your keyboard won't work. 
++ Since it's a web app not a desktop app the control buttons in your keyboard won't work.
 
 + Sharing on social media sites is limited to just Google+. This is not a deal breaker to me since I never used the shared button when I had Spotify.
 
