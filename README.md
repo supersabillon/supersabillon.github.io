@@ -1,4 +1,5 @@
-sabillondotnet
+sabillon.net
 ==============
 
-My site.
+My personal site. For now its just a blog.
+[sabillon.net](http://sabillon.net/)
