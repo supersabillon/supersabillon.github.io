@@ -8,4 +8,13 @@ tags:
 - plugin
 ---
 
-While developing a jQuery plugin I thought how cool would it be to add a callback capability to my plugin, but I wasn't sure if I wanted tons of lines of code. 
+While developing a jQuery plugin I thought how cool would it be to add a callback capability to my plugin, but I wasn't sure if I wanted tons of lines of code.
+
+Then I did some research and realized it would only takes two lines of code to make this happen.
+
+{% highlight javascript linenos %}
+var defaults = {
+
+}
+
+{% endhighlight %}
