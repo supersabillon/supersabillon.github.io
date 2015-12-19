@@ -26,6 +26,13 @@ var defaults = {
 {% endhighlight %}
 
 Then later in the program, let's say for example you need the callback to trigger when a close button is clicked:
+
 {% highlight javascript %}
-code goes here
+function closeButton() {
+		
+	// code the closes button here...
+
+	// and your callback
+	settings.myFancyCallback();
+}
 {% endhighlight %}
