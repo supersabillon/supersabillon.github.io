@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title> Extend your plugin with two lines of code |  Joel Sabillon - Front-End Developer</title>
+  <title> Enhance your jQuery plugin with two lines of code |  Joel Sabillon - Front-End Developer</title>
   <meta name="description" content="Personal website of Joel Sabillón">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,16 +34,29 @@
 <section class="container-fluid blog-post animated fadeInUp">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<h1 class="blog-post__title">Extend your plugin with two lines of code</h1>
-			<h4 class="blog-post__date">December 9, 2015</h4>
-			<p>While developing a jQuery plugin I thought how cool would it be to add a callback capability to my plugin, but I wasn't sure if I wanted tons of lines of code.</p>
+			<h1 class="blog-post__title">Enhance your jQuery plugin with two lines of code</h1>
+			<h4 class="blog-post__date">December 18, 2015</h4>
+			<p>While developing a jQuery plugin I thought about how cool it would be if it had a callback capability, but I wasn't sure if I wanted to write tons of lines of code for a feature that wasn't essential.</p>
 
 <p>Then I did some research and realized it would only takes two lines of code to make this happen.</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span> <span class="kd">var</span> <span class="nx">defaults</span> <span class="o">=</span> <span class="p">{</span>
+<p>Assuming you're using <a href="http://www.codereadability.com/what-are-javascript-options-objects/#settingdefaultvalues">good practices</a> to create your default values:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="kd">var</span> <span class="nx">defaults</span> <span class="o">=</span> <span class="p">{</span>
 <span class="lineno">2</span> 
-<span class="lineno">3</span> <span class="p">}</span>
-</code></pre></div>
+<span class="lineno">3</span>   <span class="c1">// define an empty anonymous function so</span>
+<span class="lineno">4</span>   <span class="c1">// no need to check if it exists before calling it</span>
+<span class="lineno">5</span>   <span class="nx">myFancyCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span>   <span class="c1">// ... rest of settings ...</span>
+<span class="lineno">8</span> <span class="p">};</span></code></pre></div>
+
+
+<p>Then later in the program, let's say for example you need the callback to trigger when a close button is clicked:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">code</span> <span class="nx">goes</span> <span class="nx">here</span></code></pre></div>
+
+
 
 
 		</div>
