@@ -14,7 +14,7 @@ Then I did some research and realized it would only takes two lines of code to m
 
 Assuming you're using [good practices](http://www.codereadability.com/what-are-javascript-options-objects/#settingdefaultvalues) to create your default values:
 
-{% highlight javascript linenos %}
+{% highlight javascript %}
 var defaults = {
 
   // define an empty anonymous function so
