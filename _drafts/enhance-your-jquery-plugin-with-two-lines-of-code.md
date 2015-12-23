@@ -17,6 +17,7 @@ Assuming you're using [good practices](http://www.codereadability.com/what-are-j
 {% highlight javascript %}
 var defaults = {
 
+  // 1st line of code
   // define an empty anonymous function so
   // no need to check if it exists before calling it
   myFancyCallback: function() {},
@@ -29,10 +30,10 @@ Then later in the program, let's say for example you need the callback to trigge
 
 {% highlight javascript %}
 function closeButton() {
-		
-	// code the closes button here...
 
-	// and your callback
-	settings.myFancyCallback();
+  // code the closes button here...
+
+  // and your callback (2nd line of code)
+  settings.myFancyCallback.call(this);
 }
 {% endhighlight %}

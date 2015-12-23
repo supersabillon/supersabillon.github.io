@@ -35,7 +35,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<h1 class="blog-post__title">Enhance your jQuery plugin with two lines of code</h1>
-			<h4 class="blog-post__date">December 18, 2015</h4>
+			<h4 class="blog-post__date">December 22, 2015</h4>
 			<p>While developing a jQuery plugin I thought about how cool it would be if it had a callback capability, but I wasn't sure if I wanted to write tons of lines of code for a feature that wasn't essential.</p>
 
 <p>Then I did some research and realized it would only takes two lines of code to make this happen.</p>
@@ -44,6 +44,7 @@
 
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">defaults</span> <span class="o">=</span> <span class="p">{</span>
 
+  <span class="c1">// 1st line of code</span>
   <span class="c1">// define an empty anonymous function so</span>
   <span class="c1">// no need to check if it exists before calling it</span>
   <span class="nx">myFancyCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
@@ -54,7 +55,13 @@
 
 <p>Then later in the program, let's say for example you need the callback to trigger when a close button is clicked:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">code</span> <span class="nx">goes</span> <span class="nx">here</span></code></pre></div>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">closeButton</span><span class="p">()</span> <span class="p">{</span>
+
+  <span class="c1">// code the closes button here...</span>
+
+  <span class="c1">// and your callback (2nd line of code)</span>
+  <span class="nx">settings</span><span class="p">.</span><span class="nx">myFancyCallback</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
 
 
 
