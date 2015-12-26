@@ -37,3 +37,15 @@ function closeButton() {
   settings.myFancyCallback.call(this);
 }
 {% endhighlight %}
+
+And here's an example of how it would be used:
+
+{% highlight javascript %}
+
+$('#my-element').myJQueryPlugin({
+  myFancyCallback: function() {
+    //do something
+  }
+});
+
+{% endhighlight %}
