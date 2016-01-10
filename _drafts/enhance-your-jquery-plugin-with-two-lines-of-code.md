@@ -49,3 +49,5 @@ $('#my-element').myJQueryPlugin({
 });
 
 {% endhighlight %}
+
+And that's it. Super simple and now your plugin users can easily add functionality.

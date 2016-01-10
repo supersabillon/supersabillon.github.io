@@ -35,14 +35,14 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<h1 class="blog-post__title">Enhance your jQuery plugin with two lines of code</h1>
-			<h4 class="blog-post__date">December 25, 2015</h4>
+			<h4 class="blog-post__date">January 9, 2016</h4>
 			<p>While developing a jQuery plugin I thought about how cool it would be if it had a callback capability, but I wasn't sure if I wanted to write tons of lines of code for a feature that wasn't essential.</p>
 
 <p>Then I did some research and realized it would only takes two lines of code to make this happen.</p>
 
 <p>Assuming you're using <a href="http://www.codereadability.com/what-are-javascript-options-objects/#settingdefaultvalues">good practices</a> to create your default values:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">defaults</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">defaults</span> <span class="o">=</span> <span class="p">{</span>
 
   <span class="c1">// 1st line of code</span>
   <span class="c1">// define an empty anonymous function so</span>
@@ -50,30 +50,33 @@
   <span class="nx">myFancyCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
 
   <span class="c1">// ... rest of settings ...</span>
-<span class="p">};</span></code></pre></div>
+<span class="p">};</span>
+</code></pre></div>
 
 
 <p>Then later in the program, let's say for example you need the callback to trigger when a close button is clicked:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">closeButton</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="javascript"><span class="kd">function</span> <span class="nx">closeButton</span><span class="p">()</span> <span class="p">{</span>
 
   <span class="c1">// code the closes button here...</span>
 
   <span class="c1">// and your callback (2nd line of code)</span>
   <span class="nx">settings</span><span class="p">.</span><span class="nx">myFancyCallback</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span>
+</code></pre></div>
 
 
 <p>And here's an example of how it would be used:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#my-element&#39;</span><span class="p">).</span><span class="nx">myJQueryPlugin</span><span class="p">({</span>
+<div class="highlight"><pre><code class="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#my-element&#39;</span><span class="p">).</span><span class="nx">myJQueryPlugin</span><span class="p">({</span>
   <span class="nx">myFancyCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="c1">//do something</span>
   <span class="p">}</span>
-<span class="p">});</span></code></pre></div>
+<span class="p">});</span>
+</code></pre></div>
 
 
-
+<p>And that's it. Super simple and now your plugin users can easily add functionality.</p>
 
 		</div>
 	</div>
