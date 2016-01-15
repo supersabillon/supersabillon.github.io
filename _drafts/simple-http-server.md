@@ -9,8 +9,12 @@ tags:
 - npm
 ---
 
-If you do lots of local development, for quick POCs, testing new features or for whatever reason I'm sure you've ran into multiple issues running your site locally using the File protocol (file://):
+If you do lots of local development I'm sure you've ran into multiple issues when running your site locally using the File protocol (file://):
 
 * Images with relative paths break
-* AJAX requests from local files do not work
-* External JavaScript libraries and APIs also do not work
+* AJAX requests from local files don't work
+* External JavaScript libraries and APIs do not work as expected
+
+You then may describe these behaviors as bugs, when in fact they are not. 
+
+This is why running your site in a local web server is so important, because your site would behave the same way it would out in the wild.

@@ -35,15 +35,19 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<h1 class="blog-post__title">Simple http server</h1>
-			<h4 class="blog-post__date">January 14, 2016</h4>
-			<p>If you do lots of local development, for quick POCs, testing new features or for whatever reason I'm sure you've ran into multiple issues running your site locally using the File protocol (file://):</p>
+			<h4 class="blog-post__date">January 15, 2016</h4>
+			<p>If you do lots of local development I'm sure you've ran into multiple issues when running your site locally using the File protocol (file://):</p>
 
 <ul>
 <li>Images with relative paths break</li>
-<li>AJAX requests from local files do not work</li>
-<li>External JavaScript libraries and APIs also do not work</li>
+<li>AJAX requests from local files don't work</li>
+<li>External JavaScript libraries and APIs do not work as expected</li>
 </ul>
 
+
+<p>You then may describe these behaviors as bugs, when in fact they are not.</p>
+
+<p>This is why running your site in a local web server is so important, because your site would behave the same way it would out in the wild.</p>
 
 		</div>
 	</div>
