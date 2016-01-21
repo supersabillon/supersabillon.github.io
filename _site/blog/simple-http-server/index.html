@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title> Enhance your jQuery plugin with two lines of code |  Joel Sabillon - Front-End Developer</title>
+  <title> Simple http server |  Joel Sabillon - Front-End Developer</title>
   <meta name="description" content="Personal website of Joel Sabillón">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,49 +29,24 @@
 <section class="container-fluid blog-post animated fadeInUp">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<h1 class="blog-post__title">Enhance your jQuery plugin with two lines of code</h1>
-			<h4 class="blog-post__date">January 10, 2016</h4>
-			<p>While developing a jQuery plugin I thought about how cool it would be if it had a callback capability, but I wasn't sure if I wanted to write tons of lines of code for a feature that wasn't essential.</p>
+			<h1 class="blog-post__title">Simple http server</h1>
+			<h4 class="blog-post__date">January 20, 2016</h4>
+			<p>If you do lots of local development I'm sure you've ran into multiple issues when running your site locally using the File protocol (file://):</p>
 
-<p>Then I did some research and realized it would only takes two lines of code to make this happen.</p>
-
-<p>Assuming you're using <a href="http://www.codereadability.com/what-are-javascript-options-objects/#settingdefaultvalues">good practices</a> to create your default values:</p>
-
-<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">defaults</span> <span class="o">=</span> <span class="p">{</span>
-
-  <span class="c1">// 1st line of code</span>
-  <span class="c1">// define an empty anonymous function so</span>
-  <span class="c1">// no need to check if it exists before calling it</span>
-  <span class="nx">myFancyCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
-
-  <span class="c1">// ... rest of settings ...</span>
-<span class="p">};</span>
-</code></pre></div>
+<ul>
+<li>Images with relative paths break</li>
+<li>AJAX requests from local files don't work</li>
+<li>External JavaScript libraries and APIs do not work as expected</li>
+</ul>
 
 
-<p>Then later in the program, let's say for example you need the callback to trigger when a close button is clicked:</p>
+<p>You then may describe these behaviors as bugs, when in fact they are not.</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="kd">function</span> <span class="nx">closeButton</span><span class="p">()</span> <span class="p">{</span>
+<p>This is why running your site in a local web server is so important, because your site would behave the same way it would out in the wild.</p>
 
-  <span class="c1">// code the closes button here...</span>
+<h2>command-line http server</h2>
 
-  <span class="c1">// and your callback (2nd line of code)</span>
-  <span class="nx">settings</span><span class="p">.</span><span class="nx">myFancyCallback</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-
-
-<p>And here's an example of how it would be used:</p>
-
-<div class="highlight"><pre><code class="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#my-element&#39;</span><span class="p">).</span><span class="nx">myJQueryPlugin</span><span class="p">({</span>
-  <span class="nx">myFancyCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//do something</span>
-  <span class="p">}</span>
-<span class="p">});</span>
-</code></pre></div>
-
-
-<p>And that's it. Super simple and now your plugin users can easily add functionality.</p>
+<p>Why deal with WAMP/MAMP when you can easily use a command line to run a web server?</p>
 
 		</div>
 	</div>
