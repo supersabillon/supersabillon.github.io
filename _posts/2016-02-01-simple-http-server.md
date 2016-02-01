@@ -16,7 +16,8 @@ If you do lots of local development I'm sure you've run into multiple issues whe
 * External JavaScript libraries and APIs throw restriction errors
 
 ## command-line http server
-So why deal with WAMP/MAMP when you can easily use a command line to run a web server?
+
+You could use an application like XAMPP/MAMP to create a web server, but why when you could easily use a command line instead?
 
 The [http-server](https://www.npmjs.com/package/http-server) package from npm is what you need to quickly start a web server with this command:
 
