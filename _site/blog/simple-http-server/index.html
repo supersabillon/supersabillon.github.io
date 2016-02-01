@@ -30,8 +30,8 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<h1 class="blog-post__title">Simple http server</h1>
-			<h4 class="blog-post__date">January 26, 2016</h4>
-			<p>If you do lots of local development I'm sure you've ran into multiple issues when running your site locally using the File protocol <a href="https://msdn.microsoft.com/en-us/library/aa767731">file:///</a>:</p>
+			<h4 class="blog-post__date">January 31, 2016</h4>
+			<p>If you do lots of local development I'm sure you've run into multiple issues when running your site locally using the File protocol <a href="https://msdn.microsoft.com/en-us/library/aa767731">file:///</a>:</p>
 
 <ul>
 <li>Images with relative paths break</li>
@@ -40,13 +40,17 @@
 </ul>
 
 
-<p>You then may describe these behaviors as bugs, when in fact they are not.</p>
-
-<p>This is why running your site in a local web server is so important, because your site will behave the same way it will out in the wild.</p>
-
 <h2>command-line http server</h2>
 
-<p>Why deal with WAMP/MAMP when you can easily use a command line to run a web server?</p>
+<p>So why deal with WAMP/MAMP when you can easily use a command line to run a web server?</p>
+
+<p>The <a href="https://www.npmjs.com/package/http-server">http-server</a> package from npm is what you need to quickly start a web server with this command:</p>
+
+<p><code>http-server -o</code></p>
+
+<p>Run this on your root directory, and use the <code>-o</code> option to immediately open a browser window pointing to this location by default: <code>http://localhost:8080</code>.</p>
+
+<p>Check the page <a href="https://www.npmjs.com/package/http-server">https://www.npmjs.com/package/http-server</a> for installation and more options.</p>
 
 		</div>
 	</div>
