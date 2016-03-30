@@ -9,4 +9,7 @@ tags:
 - javascript
 ---
 
-My first Ember addon
+Happy to announce my first emberjs addon: [ember-ag-grid](https://github.com/supersabillon/ember-ag-grid).
+
+It's a very simple component that wraps the [ag-grid](https://github.com/ceolter/ag-grid/) library.
+
