@@ -15,15 +15,13 @@ When working with callbacks you're usually doing async operations, so to unit te
 
 So try this:
 
-{% highlight javascript  linenos %}
+{% highlight javascript %}
 QUnit.test('should invoke callback', (assert) => {
   let done = assert.async();
-
   let callback = () => {
     assert.ok( true, 'test ok callback invoked' );
     done();
   };
-
   myFunction(callback);
 });
 {% endhighlight %}

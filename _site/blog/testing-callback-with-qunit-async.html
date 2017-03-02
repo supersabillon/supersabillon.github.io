@@ -37,16 +37,14 @@
 
 <p>So try this:</p>
 
-<p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno"> 1</span> <span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;should invoke callback&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">assert</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-<span class="lineno"> 2</span>   <span class="kd">let</span> <span class="nx">done</span> <span class="o">=</span> <span class="nx">assert</span><span class="p">.</span><span class="nx">async</span><span class="p">();</span>
-<span class="lineno"> 3</span>
-<span class="lineno"> 4</span>   <span class="kd">let</span> <span class="nx">callback</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-<span class="lineno"> 5</span>     <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span> <span class="kc">true</span><span class="p">,</span> <span class="s1">&#39;test ok callback invoked&#39;</span> <span class="p">);</span>
-<span class="lineno"> 6</span>     <span class="nx">done</span><span class="p">();</span>
-<span class="lineno"> 7</span>   <span class="p">};</span>
-<span class="lineno"> 8</span>
-<span class="lineno"> 9</span>   <span class="nx">myFunction</span><span class="p">(</span><span class="nx">callback</span><span class="p">);</span>
-<span class="lineno">10</span> <span class="p">});</span></code></pre></figure></p>
+<p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;should invoke callback&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">assert</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">done</span> <span class="o">=</span> <span class="nx">assert</span><span class="p">.</span><span class="nx">async</span><span class="p">();</span>
+  <span class="kd">let</span> <span class="nx">callback</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span> <span class="kc">true</span><span class="p">,</span> <span class="s1">&#39;test ok callback invoked&#39;</span> <span class="p">);</span>
+    <span class="nx">done</span><span class="p">();</span>
+  <span class="p">};</span>
+  <span class="nx">myFunction</span><span class="p">(</span><span class="nx">callback</span><span class="p">);</span>
+<span class="p">});</span></code></pre></figure></p>
 
 <p>And that's it! If <code>myFunction</code> does its job of invoking the callback then your test will pass.</p>
 
