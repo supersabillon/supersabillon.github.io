@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title> Ember Conf 2017 |  Joel Sabillon - Front-End Developer</title>
+  <meta name="description" content="Personal website of Joel Sabillón">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header class="fadeInDown animated">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="text-center"><a href="/">Joel Sabill&oacute;n</a></h1>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div><!-- row -->
+    </div><!-- container -->
+  </header>
+<section class="container-fluid blog-post animated fadeInUp">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h1 class="blog-post__title">Ember Conf 2017</h1>
+			<h4 class="blog-post__date">March 30, 2017</h4>
+			<p>Just got back from <a href="http://emberconf.com/">Ember Conf 2017</a> and what a great experience it was. I already can’t wait for 2018. I wanted to write down and share some of the things that stood out for me. I actually missed the last few talks since we had to leave early to catch our flight, but I’m looking forward to watching them on youtube!</p>
+
+<p>So going through my notes here’s what I’m excited about:</p>
+
+<h2>Glimmer.js</h2>
+
+<p>Probably the biggest news of the conference is <a href="https://glimmerjs.com/">Glimmer.js</a>, introduced by <a href="https://twitter.com/tomdale">@tomdale</a> in the opening keynote. Glimmer.js is the rendering engine behind Ember.js and can now be used standalone. A <code>hello world</code> app is now less than 30kb in production mode (with Ember it was  around 200kb). Glimmer.js is ES6-class based and TypeScript-friendly. Which reminds me that I need to learn TypeScript!</p>
+
+<h2>PWA</h2>
+
+<p>One of the talks was about Progressive Web Apps with ember, but throughout the conference this topic came up quite a bit. Especially offline support with service workers and application cache. With so much web traffic coming from mobile the future really is all about PWA. Full browser support is still not there yet, but better start now than being late to the game. Google has a cool chrome plugin to audit your PWA: <a href="https://developers.google.com/web/tools/lighthouse/">developers.google.com/web/tools/lighthouse/</a>.</p>
+
+<h2>in-repo addons</h2>
+
+<p>Thanks to <a href="https://twitter.com/oligriffiths">@oligriffiths’</a> talk I learned about in-repo-addons. With in-repo addon you can generate an addon within the same repository! Useful for project-specific addons or to create a poc before you start working on a proper add-on.
+Example: <code>ember generate in-repo-addon calendar</code></p>
+
+<h2>Cardstack</h2>
+
+<p><a href="https://twitter.com/eaf4">Edward Faulkner</a>'s talk was incredible. He showcased <a href="https://github.com/cardstack/cardstack">Cardstack</a> which is a tool with plugins that add a WYSIWYG editor to your Ember components. With Cardstack you could build a modern CMS with Emberjs!</p>
+
+<h2>addons</h2>
+
+<p>I learned about so many useful ember addons that I had never heard of!</p>
+
+<ul>
+<li><a href="http://ember-freestyle.com/">ember-freestyle</a>: addon that allows you to quickly create a living styleguide for your Ember app.</li>
+<li><a href="https://github.com/ebryn/ember-component-css">ember-component-css</a>: an addon which allows you to specify styles for individual components, keeps your css files organized and clean!</li>
+<li><a href="https://github.com/san650/ember-web-app">ember-web-app</a>: to help you out with creating a manifest.json needed for a PWA.</li>
+<li><a href="http://ember-service-worker.com/">ember-service-worker.com</a>: addon to use service workers, in which you use plugins to extend it.</li>
+<li><a href="https://github.com/faizaanshamsi/ember-local-forage">ember-local-forage</a>: easily add <a href="https://github.com/localForage/localForage">localForage</a> to an ember app.</li>
+</ul>
+
+
+<p>It's gonna be fun playing with the new tools and addons that I learned about in Ember Conf. All the talks were great and it got me motivated to keep writing software and learning more about javascript.</p>
+
+		</div>
+	</div>
+</section>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'joelsabillon'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+       
+     </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="header-social">
+  <li><a href="https://github.com/supersabillon"><i class="fa fa-github fa-lg"></i></a></li>
+  <li><a href="https://twitter.com/supersabillon"><i class="fa fa-twitter fa-lg"></i></a></li>
+  <li><a href="https://instagram.com/supersabillon"><i class="fa fa-instagram fa-lg"></i></a></li>
+</ul>
+      </div>
+    </div><!-- row -->
+	 </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70117330-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
