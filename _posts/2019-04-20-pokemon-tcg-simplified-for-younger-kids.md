@@ -10,13 +10,13 @@ tags:
 
 So you want to play Pokémon TCG with your younger kids (under 6-7 years old) but find the game a bit too complicated for their age? These modified rules I came up with are super simple and so easy that I get to play even with my 2 year old!
 
-To start, I suggest you use dice instead of the damage counters that usually come with a deck. Its just easier to use and less likely to lose.
+To start, this variation uses dice to attack and to keep track of HP - instead of the damage counters that usually come with a deck. Its just easier to use and less likely to lose.
 
 That said, components that you should put away cause you won't need are: energy cards, trainer cards including items and stadiums, damage counters and even the coin.
 
-The game consists of just using a deck of Pokémon cards only and there are no prize cards or bench, just a simple deck of cards.
+The game consists of just using a deck of Pokémon cards only and there are no prize cards or bench, just a simple deck of cards and dice.
 
-We like to limit the deck to 10 cards only, just to make games go faster (kids have short attention span!). And again they all have to be Pokémon, so the first thing a player has to do if pick their favorite Pokémon cards for the game.
+We like to limit the deck to 10 cards only, just to make games go faster (kids have short attention span!). And again they all have to be Pokémon, so the first thing a player has to do is pick their favorite Pokémon cards for the game.
 
 Then the game begins!
 
